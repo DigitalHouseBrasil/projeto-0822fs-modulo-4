@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Prático</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Projeto Módulo 4</title>
 </head>
 <body>
-    <h1>Olá</h1>
+    <nav class="menu">
+        <ol>
+            <li><a href="#header">Início</a></li>
+            <li><a href="#project">Projeto</a></li>
+            <li><a href="#responsiveness">Responsividade</a></li>
+            <li><a href="#foundations">Fundamentos</a></li>
+            <li><a href="#others">Outros</a></li>
+        </ol>
+    </nav>
+    <header id="header">
+        <figure class="logo">
+            <img src="./img/logo.svg" alt="">
+        </figure>
+        <h1 class="header_title">
+            HTML, CSS e a <em>anatomia da Web</em>
+        </h1>
+        <p class="header_text">Quase um mês de aulas sobre os fundamentos da web. Vamos usar esse site para comermorar e relembrar tudo o que aprendemos.</p>
+    </header>
+    <section id="project">
+        <article class="article">
+            <h2 class="article_title">Teve projetinho? Sim ou claro?</h2>
+            <p class="article_text">Além dessa página, que é o último projeto do módulo, e que fecha ele com chave de ouro, teve uma página que construímos enquanto aprendíamos sobre semântica, responsividade e estilização CSS.</p>
+        </article>
+    </section>
+    <section id="responsiveness">
+        <article class="article">
+            <h2 class="article_title">Páginas responsivas com flexbox.</h2>
+            <p class="article_text">Pensar em páginas como responsivas foi uma das coisas mais importantes do módulo. Fizemos um projeto inédito de forma responsiva para ter o gostinho de um caso real.</p>
+            <p class="article_text">Além do flexbox, o grid também foi mencionado e demonstrado para alguns alunos que solicitaram nos colearnings.</p>
+        </article>
+        <figure class="article_illustration">
+            <img src="./img/flex.png" alt="">
+        </figure>
+    </section>
+    <section id="foundations">
+        <article class="article">
+            <h2 class="article_title">A base das páginas da Web: HTML e CSS</h2>
+            <p class="article_text">Dedicamos algumas aulas para aprender os fundamentos das linguagens HTML e CSS e como elas são as bases de qualquer página da web até hoje.</p>
+            <p class="article_text">Além disso, aprendemos sobre a importância da semântica na web e algumas ferramentas para tornar o CSS também mais semântico e mais fácil de usar.</p>
+        </article>
+        <figure class="article_illustration">
+            <img src="./img/code.png" alt="">
+        </figure>
+    </section>
+    <section id="others">
+        <article class="article">
+            <h2 class="article_title">Transições CSS e outros tópicos de front end</h2>
+            <p class="article_text">Abordamos, também, outros tópicos relacionados a front end de aplicações web, tais como realizar transições com CSS, posicionamento de elementos e algumas outas estruturas, como formulários.</p>
+            <p class="article_text">O Tio Jefinho nos alertou bastante sobre o risco de abusar de transições e fazer páginas estrombólicas como as que ele fazia com Flash no início ds anos 2000.</p>
+        </article>
+        <article class="article">
+            <h2 class="article_title">Os servidores da Web e como eles funcionam.</h2>
+            <p class="article_text">Vimos as principais coisas sobre a infraestrutura da internet. Como funciona o Protocolo HTTP, a arquitetura cliente-servidor e o sistema de requisição e resposta.</p>
+            <p class="article_text">Também aprendemos a implementar um servidor simples com os pacotes nativos do Node.js e também com o módulo Express.</p>
+        </article>
+    </section>
+    <footer class="footer">
+        <p class="footer_text">Esse site foi feito para com fins educativos pela turma 08/22 de Desenvolvimento Web Full Stack da Digital House. A lista dos alunos que contribuíram para esse projeto é:</p>
+        <ul>
+            <li>Jeferson Quadros</li>
+        </ul>
+        <span class="copyright">
+            Copyright 2022. Este projeto está sendo mantido sob a licença MIT.
+        </span>
+    </footer>
+
 </body>
 </html>
