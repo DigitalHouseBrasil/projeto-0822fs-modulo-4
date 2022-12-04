@@ -122,10 +122,72 @@ nav {
 
 /* Estilo */
 
+#header {
+  height: 100vh;
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#project,
+#responsiveness,
+#foundations {
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#others {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 40vh;
+}
+
 #project {
   background-image: url("../img/project.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#project > .article > .article_title {
+  text-align: center;
+}
+
+#project > .article > .article_text {
+  text-align: center;
+}
+
+#responsiveness > .article_illustration {
+  order: 1;
+}
+
+#responsiveness > .article {
+  order: 2;
+}
+
+#foundations > .article_illustration > img {
+  border: 10px solid var(--blue);
+  border-radius: 100%;
+}
+
+#others > .article > .article_title,
+.article_text {
+  text-align: center;
+}
+
+.footer > ul {
+  list-style: disc;
+}
+
+.footer > .copyright {
+  display: block;
+  text-align: center;
 }
 
 /* Layout - Espaçamentos */
