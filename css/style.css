@@ -82,7 +82,9 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
     color: var(--white);
 }
 
-
+.footer {
+    color: var(--white);
+}
 
 /* Tipografia */
 
