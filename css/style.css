@@ -1,5 +1,5 @@
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Open+Sans:wght@400;600;700;800&display=swap");
 
 /*
 Cores: 1e1e1e, 136df3, d2d2d2, c39a05, f3f61, d2d2d2
@@ -9,30 +9,124 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
 */
 
 :root {
-    --grey: #1e1e1e;
-    --white: #d2d2d2;
-    --blue: #136df3;
-    --yellow: #c39a05;
-    --pink: #f31f61;
+  --grey: #1e1e1e;
+  --white: #d2d2d2;
+  --blue: #136df3;
+  --yellow: #c39a05;
+  --pink: #f31f61;
 
-    --size_xg: 5rem;
-    --size_lg: 4rem;
-    --size_md: 3rem;
-    --size_sm: 2.5rem;
-    --size_xs: 1rem;
+  --size_xg: 5rem;
+  --size_lg: 4rem;
+  --size_md: 3rem;
+  --size_sm: 2.5rem;
+  --size_xs: 1rem;
 
-    --font_family: "Open Sans";
-    --font_extrabold: 800;
-    --font_bold: 700;
-    --font_semibold: 600;
-    --font_regular: 500;
+  --font_family: "Open Sans";
+  --font_extrabold: 800;
+  --font_bold: 700;
+  --font_semibold: 600;
+  --font_regular: 500;
+}
+
+/* PROVISORY */
+
+nav {
+  display: none;
+  position: fixed;
+  top: var(--size_xg);
+  left: var(--size_xg);
 }
 
 /* Cores */
 
+#header {
+  background-color: var(--white);
+}
+
+.header_title > em {
+  font-weight: var(--font_extrabold);
+  background: linear-gradient(to bottom, var(--blue), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header_title {
+  font-weight: var(--font_extrabold);
+}
+
+.header_text {
+  color: var(--grey);
+}
+
+#project > .article > .article_title {
+  color: var(--yellow);
+  font-weight: var(--font_extrabold);
+}
+
+#project > .article > .article_text {
+  font-weight: var(--font_bold);
+  color: white;
+}
+
+#responsiveness {
+  background-color: var(--pink);
+}
+
+#responsiveness > .article > .article_title,
+.article_text:nth-child(2) {
+  color: white;
+  font-weight: var(--font_bold);
+}
+
+#responsiveness > .article > .article_text:nth-child(3) {
+  color: var(--white);
+}
+
+#foundations > .article > .article_title {
+  color: var(--blue);
+  font-weight: var(--font_extrabold);
+}
+
+#foundations > .article > .article_text:nth-child(2) {
+  color: var(--grey);
+  font-weight: var(--font_bold);
+}
+
+#others {
+  background-color: var(--yellow);
+}
+
+#others > .article > .article_title {
+  color: white;
+  font-weight: var(--font_extrabold);
+}
+
+#others > .article > .article_text {
+  color: var(--grey);
+}
+
+.footer {
+  background-color: var(--grey);
+  color: white;
+}
+
+.footer_text {
+  font-weight: var(--font_extrabold);
+}
+
+.footer > .copyright {
+  font-weight: var(--font_extrabold);
+}
+
 /* Tipografia */
 
 /* Estilo */
+
+#project {
+  background-image: url("../img/project.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Layout - Espaçamentos */
 
