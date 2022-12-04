@@ -30,6 +30,60 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
 
 /* Cores */
 
+#header{
+    background-color: var(--white);
+}
+
+#responsiveness{
+    background-color: var(--pink);
+}
+
+#foundations{
+    background-color: var(--whithe);
+}
+
+#others{
+    background-color: var(--yellow);
+}
+
+.footer{
+    background-color: var(--grey);
+}
+
+#project .article .article_title{
+    color: var(--yellow);
+}
+
+#project .article .article_text{
+    color: var(--white);
+}
+
+#responsiveness .article .article_title{
+    color: var(--white);
+}
+
+#responsiveness .article .article_text{
+    color: var(--white);
+}
+
+#foundations .article .article_title{
+    color: var(--blue);
+}
+
+#foundations .article .article_text{
+    color: var(--black);
+}
+
+#others .article .article_text{
+    color: var(--black);
+}
+
+#others .article .article_title{
+    color: var(--white);
+}
+
+
+
 /* Tipografia */
 
 /* Estilo */
