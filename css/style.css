@@ -28,30 +28,10 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
   --font_regular: 500;
 }
 
-/* PROVISORY */
-
-nav {
-  display: none;
-  position: fixed;
-  top: var(--size_xg);
-  left: var(--size_xg);
-}
-
 /* Cores */
 
 #header {
   background-color: var(--white);
-}
-
-.header_title > em {
-  font-weight: var(--font_extrabold);
-  background: linear-gradient(to bottom, var(--blue), var(--pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.header_title {
-  font-weight: var(--font_extrabold);
 }
 
 .header_text {
@@ -60,11 +40,9 @@ nav {
 
 #project > .article > .article_title {
   color: var(--yellow);
-  font-weight: var(--font_extrabold);
 }
 
 #project > .article > .article_text {
-  font-weight: var(--font_bold);
   color: white;
 }
 
@@ -75,7 +53,6 @@ nav {
 #responsiveness > .article > .article_title,
 .article_text:nth-child(2) {
   color: white;
-  font-weight: var(--font_bold);
 }
 
 #responsiveness > .article > .article_text:nth-child(3) {
@@ -84,12 +61,10 @@ nav {
 
 #foundations > .article > .article_title {
   color: var(--blue);
-  font-weight: var(--font_extrabold);
 }
 
 #foundations > .article > .article_text:nth-child(2) {
   color: var(--grey);
-  font-weight: var(--font_bold);
 }
 
 #others {
@@ -98,7 +73,6 @@ nav {
 
 #others > .article > .article_title {
   color: white;
-  font-weight: var(--font_extrabold);
 }
 
 #others > .article > .article_text {
@@ -110,23 +84,9 @@ nav {
   color: white;
 }
 
-.footer_text {
-  font-weight: var(--font_extrabold);
-}
-
-.footer > .copyright {
-  font-weight: var(--font_extrabold);
-}
-
 /* Tipografia */
 
 /* Estilo */
-
-#project {
-  background-image: url("../img/project.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Layout - Espaçamentos */
 
