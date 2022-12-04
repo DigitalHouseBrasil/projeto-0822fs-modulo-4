@@ -35,3 +35,6 @@ Será adotada uma versão simplificada do [Guia de estilo de mensagens de commit
 5. O _pull request_ será submetido a um _code review_ e poderão ser solicitadas alterações
 
 Contribua!
+
+## Política de versionamento
+Este projeto ser versionado pelo modelo de versionamento semântico proposto no [RFC 2119](https://semver.org/lang/pt-BR/) e incrementado sempre que houver _pull requests_ ou _commits_ dos tipos `feat` (termo _MINOR_) e `fix` (termo _PATCH_) na branch `master`.
