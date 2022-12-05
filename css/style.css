@@ -34,54 +34,64 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
   background-color: var(--white);
 }
 
+.header_title > em {
+  background-image: linear-gradient(to bottom, var(--blue), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .header_text {
   color: var(--grey);
 }
 
-#project > .article > .article_title {
+#project .article_title {
   color: var(--yellow);
 }
 
-#project > .article > .article_text {
-  color: white;
+#project .article_text {
+  color: var(--white);
 }
 
 #responsiveness {
   background-color: var(--pink);
 }
 
-#responsiveness > .article > .article_title,
-.article_text:nth-child(2) {
-  color: white;
-}
-
-#responsiveness > .article > .article_text:nth-child(3) {
+#responsiveness .article_title,
+.article_text {
   color: var(--white);
 }
 
-#foundations > .article > .article_title {
+#foundations {
+  background-color: var(--white);
+}
+
+#foundations .article_title {
   color: var(--blue);
 }
 
-#foundations > .article > .article_text:nth-child(2) {
+#foundations .article_text {
   color: var(--grey);
+}
+
+#foundations .article_illustration > img {
+  border: 10px solid var(--blue);
 }
 
 #others {
   background-color: var(--yellow);
 }
 
-#others > .article > .article_title {
-  color: white;
+#others .article_title {
+  color: var(--white);
 }
 
-#others > .article > .article_text {
+#others .article_text {
   color: var(--grey);
 }
 
 .footer {
   background-color: var(--grey);
-  color: white;
+  color: var(--white);
 }
 
 /* Tipografia */
