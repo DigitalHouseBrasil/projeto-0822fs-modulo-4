@@ -29,13 +29,141 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
 }
 
 /* Cores */
+.header_title{
+    font-size: var(--size_sm);
+    font-weight: var(--font_extrabold);
+    text-align: left;
+}
+.menu{
+    display: flex;
+}
+header{
+    display: flex;
+}
+.imagem-header{
+    max-width: 50pc;
+    max-width: 10pc;
+}
 
+em{
+    background-image: linear-gradient (
+        90deg,
+        var(--pink),
+        var(--blue)
+    );
+    
+}
+
+
+#project{
+    background: var(--grey);
+    color: var(--white);
+    text-align: center;
+
+}
+#project h2 {
+    color   : var(--yellow);
+    font-size:var(--size_sm) ;
+    font-weight: var(--font_extrabold);
+}
+
+#responsiveness{
+    background: var(--pink);
+    color: var(--white);
+    text-align: right;
+    
+}
+#responsiveness h2{
+
+    font-size: var(--size_md);
+    font-weight: var(--font_extrabold);
+}
+
+#foundations h2{
+ color: var(--blue);
+ font-size: var(--size_sm);
+ font-weight: var(--font_extrabold);
+ text-align: left;
+}
+
+#others{
+    background: var(--yellow);
+}
+#others h2{
+    color: var(--white);
+    font-weight: var(--font_extrabold);
+    font-size: var(--size_sm);
+    display: block;
+
+}
+.article_title1{
+    text-align: left;
+    display: block;
+}
+.article_title2 {
+    text-align: right;
+    
+
+}
+footer{
+    background: var(--grey);
+    color: var(--white);
+}
+a{
+    color: var(--blue);
+}
 /* Tipografia */
+body{
+    font-family: var(--font_family);
+   
+}
 
 /* Estilo */
+li a {
+    text-decoration: none;
+}
+
+.article_illustration{
+    border-radius: var(--size_sm);
+}
 
 /* Layout - Espaçamentos */
+#responsiveness{
+    display: flex;
+}
+.article_illustration{
+    align-items: right;
+}
 
+
+#foundations{
+    display: flex;
+}
+#others{
+    display: flex;
+}
+
+.article, .article_title{
+    padding: 40px;
+}
+
+.footer_text{
+    padding: 40px;
+    
+    text-align: left;
+}
+
+span{
+    text-align: center;
+}
+
+.article_illustration{
+    border-radius: 5px;
+}
+
+.quadrado{
+    border-radius: 1px;
+}
 /* Layout - Grade */
 
 /* Animações e transições */
