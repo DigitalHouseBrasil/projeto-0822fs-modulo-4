@@ -28,13 +28,8 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
   --font_regular: 500;
 }
 
-/* PROVISORY */
-
-nav {
-  display: none;
-  position: fixed;
-  top: var(--size_xg);
-  left: var(--size_xg);
+body {
+  font-family: var(--font_family);
 }
 
 /* Cores */
@@ -44,86 +39,107 @@ nav {
 }
 
 .header_title > em {
-  font-weight: var(--font_extrabold);
-  background: linear-gradient(to bottom, var(--blue), var(--pink));
+  background-image: linear-gradient(to bottom, var(--blue), var(--pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.header_title {
-  font-weight: var(--font_extrabold);
 }
 
 .header_text {
   color: var(--grey);
 }
 
-#project > .article > .article_title {
+#project .article_title {
   color: var(--yellow);
-  font-weight: var(--font_extrabold);
 }
 
-#project > .article > .article_text {
-  font-weight: var(--font_bold);
-  color: white;
+#project .article_text {
+  color: var(--white);
 }
 
 #responsiveness {
   background-color: var(--pink);
 }
 
-#responsiveness > .article > .article_title,
-.article_text:nth-child(2) {
-  color: white;
-  font-weight: var(--font_bold);
-}
-
-#responsiveness > .article > .article_text:nth-child(3) {
+#responsiveness .article_title,
+.article_text {
   color: var(--white);
 }
 
-#foundations > .article > .article_title {
-  color: var(--blue);
-  font-weight: var(--font_extrabold);
+#foundations {
+  background-color: var(--white);
 }
 
-#foundations > .article > .article_text:nth-child(2) {
+#foundations .article_title {
+  color: var(--blue);
+}
+
+#foundations .article_text {
   color: var(--grey);
-  font-weight: var(--font_bold);
+}
+
+#foundations .article_illustration > img {
+  border: 10px solid var(--blue);
 }
 
 #others {
   background-color: var(--yellow);
 }
 
-#others > .article > .article_title {
-  color: white;
-  font-weight: var(--font_extrabold);
+#others .article_title {
+  color: var(--white);
 }
 
-#others > .article > .article_text {
+#others .article_text {
   color: var(--grey);
 }
 
 .footer {
   background-color: var(--grey);
-  color: white;
-}
-
-.footer_text {
-  font-weight: var(--font_extrabold);
-}
-
-.footer > .copyright {
-  font-weight: var(--font_extrabold);
+  color: var(--white);
 }
 
 /* Tipografia */
 
+.article_title + .article_text {
+  font-weight: var(--font_bold);
+}
+
+.header_title {
+  font-weight: var(--font_bold);
+  font-size: var(--size_xg);
+}
+
+#project .article_title {
+  font-size: var(--size_md);
+  font-weight: var(--font_bold);
+}
+
+#project .article_text {
+  font-weight: var(--font_regular);
+}
+
+#responsiveness .article_title {
+  font-size: var(--size_md);
+  font-weight: var(--font_bold);
+}
+
+#foundations .article_title {
+  font-size: var(--size_md);
+  font-weight: var(--font_bold);
+}
+
+#others .article_title {
+  font-size: var(--size_md);
+  font-weight: var(--font-bold);
+}
+
+.footer ul li {
+  font-weight: var(--font-regular);
+}
+
 /* Estilo */
 
 #header {
-  height: 100vh;
   background-image: url(../img/header.png);
   background-repeat: no-repeat;
   background-position: right top;
@@ -132,21 +148,15 @@ nav {
 #project,
 #responsiveness,
 #foundations {
-  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 #others {
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  height: 40vh;
 }
 
 #project {
@@ -155,11 +165,11 @@ nav {
   background-size: cover;
 }
 
-#project > .article > .article_title {
+#project .article_title {
   text-align: center;
 }
 
-#project > .article > .article_text {
+#project .article_text {
   text-align: center;
 }
 
@@ -171,21 +181,20 @@ nav {
   order: 2;
 }
 
-#foundations > .article_illustration > img {
-  border: 10px solid var(--blue);
+#foundations .article_illustration > img {
   border-radius: 100%;
 }
 
-#others > .article > .article_title,
+#others .article_title,
 .article_text {
   text-align: center;
 }
 
-.footer > ul {
+.footer ul {
   list-style: disc;
 }
 
-.footer > .copyright {
+.footer .copyright {
   display: block;
   text-align: center;
 }
