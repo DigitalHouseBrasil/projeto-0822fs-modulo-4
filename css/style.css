@@ -40,6 +40,10 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
   -webkit-text-fill-color: transparent;
 }
 
+.header_title {
+  color: var(--grey);
+}
+
 .header_text {
   color: var(--grey);
 }
@@ -57,7 +61,7 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
 }
 
 #responsiveness .article_title,
-.article_text {
+#responsiveness .article_text {
   color: var(--white);
 }
 
@@ -74,7 +78,7 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
 }
 
 #foundations .article_illustration > img {
-  border: 10px solid var(--blue);
+  border-color: var(--blue);
 }
 
 #others {
