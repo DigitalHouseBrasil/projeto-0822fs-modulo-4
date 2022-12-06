@@ -29,12 +29,48 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
 }
 
 /* Cores */
+h1 em{
+    background: linear-gradient(#136DF3 0%, #F30F61 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Tipografia */
+h1 header_text{
+    font: 'Open Sans';
+    height: 700;
+    size: 80px;
+    line-height: 80px;
+}
+
+h1 em{
+    font: 'Open Sans';
+    height: 600;
+    size: 64px;
+    line-height: 64px;
+}
 
 /* Estilo */
 
+
+h1, em{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+
 /* Layout - Espaçamentos */
+h1, em{
+    width: 474px;
+    height: 248px;
+    top: -9px;
+    left: -44px;
+}
+
+
 
 /* Layout - Grade */
 
