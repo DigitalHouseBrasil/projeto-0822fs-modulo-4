@@ -28,10 +28,6 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
   --font_regular: 500;
 }
 
-body {
-  font-family: var(--font_family);
-}
-
 /* Cores */
 
 #header {
@@ -42,6 +38,10 @@ body {
   background-image: linear-gradient(to bottom, var(--blue), var(--pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header_title {
+  color: var(--grey);
 }
 
 .header_text {
@@ -61,7 +61,7 @@ body {
 }
 
 #responsiveness .article_title,
-.article_text {
+#responsiveness .article_text {
   color: var(--white);
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 #foundations .article_illustration > img {
-  border: 10px solid var(--blue);
+  border-color: var(--blue);
 }
 
 #others {
@@ -100,41 +100,44 @@ body {
 
 /* Tipografia */
 
-.article_title + .article_text {
-  font-weight: var(--font_bold);
+body * {
+  font-family: var(--font_family);
 }
 
 .header_title {
-  font-weight: var(--font_bold);
-  font-size: var(--size_xg);
+  font-size: var(--size_lg);
+  font-weight: var(--font_semibold);
 }
 
-#project .article_title {
-  font-size: var(--size_md);
+.header_title em {
+  font-size: var(--size_xl);
   font-weight: var(--font_bold);
 }
 
-#project .article_text {
+.header_text {
+  font-size: var(--size_xs);
   font-weight: var(--font_regular);
 }
 
-#responsiveness .article_title {
-  font-size: var(--size_md);
-  font-weight: var(--font_bold);
-}
-
-#foundations .article_title {
-  font-size: var(--size_md);
-  font-weight: var(--font_bold);
+.article_title {
+  font-weight: var(--font_extrabold);
+  font-size: var(--size_lg);
 }
 
 #others .article_title {
   font-size: var(--size_md);
-  font-weight: var(--font-bold);
 }
 
-.footer ul li {
-  font-weight: var(--font-regular);
+.article_text,
+.footer * {
+  font-weight: var(--font_regular);
+  font-size: var(--size_xs);
+}
+
+.article_title + .article_text,
+.footer_text,
+.copyright {
+  font-weight: var(--font_bold);
 }
 
 /* Estilo */
@@ -181,7 +184,17 @@ body {
   order: 2;
 }
 
+#responsiveness .article_text {
+  text-align: left;
+}
+
+#foundations .article_text {
+  text-align: left;
+}
+
 #foundations .article_illustration > img {
+  border-width: 10px;
+  border-style: solid;
   border-radius: 100%;
 }
 
