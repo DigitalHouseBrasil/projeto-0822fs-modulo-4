@@ -15,7 +15,7 @@ Dimensões: 5rem, 4rem, 3rem, 2.5rem, 1rem
   --yellow: #c39a05;
   --pink: #f31f61;
 
-  --size_xg: 5rem;
+  --size_xl: 5rem;
   --size_lg: 4rem;
   --size_md: 3rem;
   --size_sm: 2.5rem;
@@ -142,10 +142,22 @@ body * {
 
 /* Estilo */
 
+nav {
+  display: none;
+}
+
 #header {
   background-image: url(../img/header.png);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-size: contain;
+  background-position: 700px -110px;
+  height: 40vmax;
+}
+
+.logo,
+.header_title,
+.header_text {
+  width: 474px;
 }
 
 #project,
@@ -168,12 +180,19 @@ body * {
   background-size: cover;
 }
 
-#project .article_title {
+#project .article_title,
+.article_text {
+  width: 965px;
   text-align: center;
 }
 
+#project .article_title {
+  padding-top: calc(var(--size_xl) * 2);
+  margin-bottom: var(--size_md);
+}
+
 #project .article_text {
-  text-align: center;
+  padding-bottom: calc(var(--size_xl) * 2);
 }
 
 #responsiveness > .article_illustration {
@@ -213,6 +232,12 @@ body * {
 }
 
 /* Layout - Espaçamentos */
+
+.logo,
+.header_title,
+.header_text {
+  padding: var(--size_xs) var(--size_xl);
+}
 
 /* Layout - Grade */
 
