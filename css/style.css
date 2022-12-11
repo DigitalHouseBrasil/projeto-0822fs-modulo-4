@@ -142,10 +142,6 @@ body * {
 
 /* Estilo */
 
-nav {
-  display: none;
-}
-
 #header {
   background-image: url(../img/header.png);
   background-repeat: no-repeat;
@@ -157,7 +153,7 @@ nav {
 .logo,
 .header_title,
 .header_text {
-  width: 474px;
+  width: calc(var(--size_xl) * 6.5);
 }
 
 #project,
@@ -170,7 +166,7 @@ nav {
 
 #others {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -186,15 +182,6 @@ nav {
   text-align: center;
 }
 
-#project .article_title {
-  padding-top: calc(var(--size_xl) * 2);
-  margin-bottom: var(--size_md);
-}
-
-#project .article_text {
-  padding-bottom: calc(var(--size_xl) * 2);
-}
-
 #responsiveness > .article_illustration {
   order: 1;
 }
@@ -203,8 +190,18 @@ nav {
   order: 2;
 }
 
+#responsiveness .article_title,
+#responsiveness .article_text {
+  width: calc(var(--size_xl) * 5.6);
+}
+
 #responsiveness .article_text {
   text-align: left;
+}
+
+#foundations .article_title,
+#foundations .article_text {
+  width: calc(var(--size_xl) * 5.6);
 }
 
 #foundations .article_text {
@@ -218,8 +215,17 @@ nav {
 }
 
 #others .article_title,
+#others .article_text {
+  width: calc(var(--size_md) * 10);
+}
+
+#others .article_title,
 .article_text {
   text-align: center;
+}
+
+.footer_text {
+  width: calc(var(--size_xl) * 6);
 }
 
 .footer ul {
@@ -237,6 +243,48 @@ nav {
 .header_title,
 .header_text {
   padding: var(--size_xs) var(--size_xl);
+}
+
+#project .article_title {
+  padding-top: calc(var(--size_xl) * 2);
+  margin-bottom: var(--size_md);
+}
+
+#project .article_text {
+  padding-bottom: calc(var(--size_xl) * 2);
+}
+
+#responsiveness .article_title {
+  margin: var(--size_md) 0;
+}
+
+#responsiveness .article_text {
+  margin: var(--size_sm) 0;
+}
+
+#foundations .article_title {
+  margin: var(--size_md);
+}
+
+#foundations .article_text {
+  margin: var(--size_md);
+}
+
+#others .article_title,
+#others .article_text {
+  margin: var(--size_sm) 0;
+}
+
+.footer {
+  padding: var(--size_xl);
+}
+
+.footer_text {
+  margin-bottom: var(--size_md);
+}
+
+.footer ul {
+  margin-bottom: var(--size_md);
 }
 
 /* Layout - Grade */
